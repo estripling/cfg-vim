@@ -137,8 +137,8 @@ set fileformats=unix,dos,mac
 " Needed for certian colorschemes
 set term=xterm-256color
 
-"set background=light
-set background=dark
+set background=light
+"set background=dark
 "see ./setup_colorscheme_papercolor.sh
 colorscheme PaperColor
 
@@ -190,9 +190,9 @@ set cursorline
 
 " https://coderwall.com/p/uu7-aa/vi-display-a-vertical-line-at-an-arbitrary-column-width
 " to be set with ColorColumn
-if exists('&colorcolumn')
-  set colorcolumn=80
-endif
+"if exists('&colorcolumn')
+"  set colorcolumn=80
+"endif
 
 " Wrap lines longer than the width of the window
 " https://stackoverflow.com/questions/989093/soft-wrap-at-80-characters-in-vim-in-window-of-arbitrary-width
