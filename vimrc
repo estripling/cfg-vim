@@ -184,6 +184,17 @@ set cursorline
 " To be set with colorcolumn
 
 
+" Set default font:
+" Try setting your font from the menu and then typing: `:set guifont?`
+set guifont=Fira\ Code\ Medium\ 12
+if has("gui_running")
+  if has("gui_gtk3")
+    set guifont=Fira\ Code\ Medium\ 12
+  elseif has("gui_gtk2")
+    set guifont=Fira\ Code\ Medium\ 12
+  endif
+endif
+
 " Highlight current column
 "set cursorcolumn
 
