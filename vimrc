@@ -562,6 +562,28 @@ noremap <leader>pp : setlocal paste!<cr>
 " }
 
 " Custom functions {
+"
+" Repeating characters in insert mode {
+" https://stackoverflow.com/questions/5054128/repeating-characters-in-vim-insert-mode
+"function! RepeatString()
+"  let string = input("Enter string to be repeated: ")
+"  let times = input("Enter how many times: ")
+"  execute ":normal a" . repeat(string, times)
+"endfunction
+"
+"noremap <leader>rr : call RepeatString()<CR>
+"
+" Just use Vim's native :normal (:norm) command:
+"  - When in Normal mode, type ':normal <count>i<expr> <CR>'
+"
+"  - When in Insert mode, type '<C-o>:normal <count>i<expr> <CR>'
+"      > The <C-o> is used to issue normal commands without leaving the Insert mode.
+"
+"  - Example for inserting a separator
+"
+"        :normal 80i- <CR>
+"
+"   }
 
 " Split up paragraph {
 " Such that each sentence is on a separate line
