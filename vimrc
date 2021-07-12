@@ -57,9 +57,6 @@ set history=1000
 " Set spell checking on: see key mapping
 " set spell
 
-" Add thesaurus. In Vim, start typing and press `<C-x><C-t>`
-set thesaurus+=~/.vim/thesau/mthesaur.txt
-
 " Set to auto read when a file is changed from the outside
 set autoread
 
@@ -137,10 +134,8 @@ set fileformats=unix,dos,mac
 " Needed for certian colorschemes
 set term=xterm-256color
 
-set background=light
-"set background=dark
-"see ./setup_colorscheme_papercolor.sh
-colorscheme PaperColor
+"set background=light
+set background=dark
 
 if has('cmdline_info')
   " Show the line and column number of the cursor position, separated by a comma.
