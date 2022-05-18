@@ -134,8 +134,8 @@ set fileformats=unix,dos,mac
 " Needed for certian colorschemes
 set term=xterm-256color
 
-"set background=light
-set background=dark
+set background=light
+"set background=dark
 
 if has('cmdline_info')
   " Show the line and column number of the cursor position, separated by a comma.
